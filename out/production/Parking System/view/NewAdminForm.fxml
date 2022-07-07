@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="NewAdminContext" prefHeight="323.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewAdminFormController">
+   <children>
+      <Label layoutX="148.0" layoutY="116.0" text="User Name" textAlignment="RIGHT" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="152.0" text="Password" textAlignment="RIGHT" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUName" layoutX="248.0" layoutY="107.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXPasswordField fx:id="pwPassword" layoutX="248.0" layoutY="143.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXButton buttonType="RAISED" layoutX="153.0" layoutY="233.0" onAction="#btnBackOnAction" prefHeight="45.0" prefWidth="135.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnReg" buttonType="RAISED" layoutX="313.0" layoutY="233.0" onAction="#btnRegisterOnAction" prefHeight="45.0" prefWidth="135.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="94.0" layoutY="188.0" prefHeight="20.0" prefWidth="128.0" text="Re-Enter Password" textAlignment="RIGHT" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="pwReEnterPassword" layoutX="247.0" layoutY="179.0" prefHeight="25.0" prefWidth="235.0" />
+      <ImageView fitHeight="76.0" fitWidth="94.0" layoutX="262.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/settings.png" />
+         </image>
+         <effect>
+            <Reflection fraction="1.0" topOpacity="0.14" />
+         </effect>
+      </ImageView>
+      <Label fx:id="lblUNRegex" layoutX="248.0" layoutY="135.0" prefHeight="15.0" prefWidth="235.0" textFill="#ff3737">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPWRegex" layoutX="248.0" layoutY="171.0" prefHeight="15.0" prefWidth="235.0" textFill="#ff3737">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblReEnterPwRegex" layoutX="247.0" layoutY="207.0" prefHeight="15.0" prefWidth="235.0" textFill="#ff3737">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

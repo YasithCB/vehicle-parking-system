@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashboardContext" prefHeight="610.0" prefWidth="955.0" style="-fx-background-color: #F3F3F3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="955.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/welcome.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="39.0" layoutX="259.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="202.0" />
+      <Label fx:id="lblDate" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="152.0" prefHeight="39.0" prefWidth="190.0" text="2022-1-19" textFill="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDay" alignment="CENTER" contentDisplay="CENTER" layoutX="265.0" layoutY="161.0" prefHeight="21.0" prefWidth="190.0" text="Sataurday" textFill="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="232.0" text="Select Vehicle" textFill="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbVehicle" layoutX="277.0" layoutY="222.0" prefHeight="25.0" prefWidth="305.0" />
+      <Label layoutX="155.0" layoutY="272.0" text="Vehicle Type" textFill="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="310.0" text="Driver" textFill="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbDriver" layoutX="277.0" layoutY="302.0" prefHeight="25.0" prefWidth="305.0" />
+      <JFXTextField fx:id="txtVehicleType" editable="false" layoutX="277.0" layoutY="265.0" prefHeight="25.0" prefWidth="305.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="126.0" layoutX="166.0" layoutY="406.0" opacity="0.35" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="408.0" />
+      <Label layoutX="288.0" layoutY="430.0" text="Your Parking Slot Number" textFill="#6f6f6f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSlotNumber" alignment="CENTER" layoutX="326.0" layoutY="448.0" prefHeight="62.0" prefWidth="85.0" textFill="#4d4d4d">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnOnDeliveryShift" buttonType="RAISED" layoutX="648.0" layoutY="430.0" onAction="#onDeliveryShiftOnAction" prefHeight="49.0" prefWidth="231.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="On Delivery Shift" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnManagementLogin" buttonType="RAISED" layoutX="648.0" layoutY="493.0" onAction="#btnManagementLogin" prefHeight="62.0" prefWidth="231.0" styleClass="buttonDBlue" stylesheets="@../css/css.css" text="Management Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fx:id="imgVan" fitHeight="150.0" fitWidth="249.0" layoutX="648.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../asserts/van.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="397.0" layoutY="591.0" text="D e v e l o p e d  B y  A n o n y m o u s " textFill="#393939">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnParkVehicle" buttonType="RAISED" layoutX="648.0" layoutY="369.0" onAction="#parkVehicleOnAction" prefHeight="49.0" prefWidth="231.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="Park Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="461.0" layoutY="152.0" prefHeight="39.0" prefWidth="190.0" text="22 : 55 : 45" textFill="#4d4d4d">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBus" fitHeight="163.0" fitWidth="256.0" layoutX="636.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../asserts/bus.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLorry" fitHeight="163.0" fitWidth="256.0" layoutX="636.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../asserts/lorry.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnParkingView" layoutX="305.0" layoutY="357.0" onAction="#parkingViewOnAction" prefHeight="25.0" prefWidth="130.0" text="Show Parking View" textFill="#6f6f6f">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblSelectVehicleRegex" layoutX="277.0" layoutY="250.0" prefHeight="15.0" prefWidth="235.0" textFill="#ff3737">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDriverRegex" layoutX="277.0" layoutY="330.0" prefHeight="15.0" prefWidth="235.0" textFill="#ff3737">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

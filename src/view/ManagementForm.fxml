@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManagementContext" prefHeight="610.0" prefWidth="955.0" style="-fx-background-color: #F3F3F3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementFormController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="955.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/management%20bg.jpg" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="cmbVehicleState" layoutX="80.0" layoutY="166.0" prefHeight="25.0" prefWidth="236.0" />
+      <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="162.0" onAction="#addVehicleOnAction" prefHeight="33.0" prefWidth="161.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="Add Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="529.0" layoutY="162.0" onAction="#addDriverOnAction" prefHeight="33.0" prefWidth="161.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="715.0" layoutY="162.0" onAction="#logOutOnAction" opacity="0.91" prefHeight="33.0" prefWidth="161.0" styleClass="buttonClose" stylesheets="@../css/css.css" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="tableContext" layoutX="105.0" layoutY="237.0" prefHeight="316.0" prefWidth="746.0" />
+   </children>
+</AnchorPane>

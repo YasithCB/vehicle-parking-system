@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginContext" prefHeight="323.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="133.0" layoutY="142.0" text="User Name" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="188.0" text="Password" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" layoutX="233.0" layoutY="133.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXPasswordField fx:id="pwPassword" layoutX="233.0" layoutY="179.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXButton buttonType="RAISED" layoutX="153.0" layoutY="233.0" onAction="#btnCancelOnAction" prefHeight="45.0" prefWidth="135.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="313.0" layoutY="233.0" onAction="#btnLoginOnAction" prefHeight="45.0" prefWidth="135.0" styleClass="buttonLightBlue" stylesheets="@../css/css.css" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="104.0" fitWidth="82.0" layoutX="265.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/outline_login_white_24dp.png" />
+         </image>
+         <effect>
+            <Reflection fraction="0.84" topOpacity="0.1" />
+         </effect>
+      </ImageView>
+      <Label fx:id="lblUnRequired" layoutX="233.0" layoutY="167.0" prefHeight="15.0" prefWidth="235.0" textFill="#ff3737">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPwRequired" layoutX="233.0" layoutY="218.0" prefHeight="15.0" prefWidth="235.0" textFill="#ff3737">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="293.0" onMouseClicked="#lblNewManagerOnClicked" text="New Manager?" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
